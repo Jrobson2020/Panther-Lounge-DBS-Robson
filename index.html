@@ -20,23 +20,33 @@
 
    <button">
       Search
-      </button>
+   </button>
 
-      <button onclick="drpdn()" class="drpdn">
-         Check In
-      </button>
-
-      <button onclick="drpdn" class="drpdn">
-         Check Out
-      </button>
-
+   <form>
+      <select id="chooseClub">
+         Checkout an item from
+         <option value="anime">
+            Anime Club
+         </option>
+         <option value="fitssff">
+            FITSSFF
+         </option>
+      </select>
+   </form>
 </header>
 
 <body>
    <h1>
-      Welcome to the Panther Lounge
+      Welcome to the Panther Lounge.
    </h1>
-   <a>
+   <p>
+      The Panther Lounge is a recreational space owned by Florida Tech's
+      Student Government Association and co-run by the Florida Institute
+      of Technology Science Fiction and Fantasy Club (FITSSFF) and Anime Club.
+      With some exeptions, all Florida Tech students are free to use the lounge
+      every day from noon to ten pm.
+   </p>
+   <a href="catalog.html">
       I am here to browse
    </a>
    <a>
@@ -46,7 +56,7 @@
       as a filled out,
       if not what the hell are you doing with your life -->
       <form>
-         <select id="chooseClub">
+         <select id="chooseClub" href="checkout.html">
             I am here to checkout an item from
             <option value="anime">
                Anime Club
