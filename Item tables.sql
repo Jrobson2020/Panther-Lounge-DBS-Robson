@@ -1,0 +1,43 @@
+CREATE TABLE IF NOT EXISTS items (
+	id INT NOT NULL,
+    itemName VARCHAR(64),
+    itemType VARCHAR(16),
+    series VARCHAR(64),
+    itemStatus INT,
+    rating INT,
+    descript VARCHAR(1024),
+    CONSTRAINT PRIMARY KEY (id)
+);
+    
+CREATE TABLE IF NOT EXISTS media (
+	id INT NOT NULL,
+    creator VARCHAR(32),
+    length INT,
+    CONSTRAINT PRIMARY KEY (id),
+    CONSTRAINT FOREIGN KEY (id) REFERENCES items(id)
+		ON UPDATE CASCADE
+        ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS game (
+	id INT NOT NULL,
+    gameSystem VARCHAR(64),
+    age INT,
+    maxPlayer INT,
+    playTime INT,
+    CONSTRAINT PRIMARY KEY (id),
+    CONSTRAINT FOREIGN KEY (id) REFERENCES items(id)
+		ON UPDATE CASCADE
+        ON DELETE CASCADE
+);
+        
+CREATE TABLE IF NOT EXISTS hardware (
+	id INT NOT NULL,
+    age INT,
+    condit VARCHAR(64),
+    CONSTRAINT PRIMARY KEY (id),
+    CONSTRAINT FOREIGN KEY (id) REFERENCES items(id)
+		ON UPDATE CASCADE
+        ON DELETE CASCADE
+);
+    
