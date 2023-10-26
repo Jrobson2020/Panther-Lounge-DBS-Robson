@@ -1,0 +1,73 @@
+<html>
+
+<head>
+   <title>
+      Panther Lounge Database
+   </title>
+   <script src="script.js">
+   </script>
+   <link rel="stylesheet" href="style.css">
+   <link rel="favicon" href="lounge_logo_trans.png">
+</head>
+
+<header>
+   <h1>
+      <!-- add logo here -->
+      <a href="index.html">
+         Panther Lounge Database
+      </a>
+   </h1>
+   <!-- add links to the linktree for both clubs -->
+
+   <form method="post" action="externalSearch.php">
+      <!-- send submission to search bar in the catalog section -->
+      <input id="searchQ" name="searchBar" type="text" placeholder="Search for manga, novels, TTRPG manuals, board games, trading cards...">
+      <a href="catalog.html">
+         <button type="submit">
+            ⌕
+         </button>
+      </a>
+   </form>
+   <form method="post" action="clubChoice.php">
+      <select name="club" id="chooseClub">
+         Checkout an item from
+         <option type="submit" value="anime">
+            Anime Club
+         </option>
+         <option type="submit" value="fitssff">
+            FITSSFF
+         </option>
+      </select>
+   </form>
+</header>
+
+<body>
+   <h1>
+      Welcome to the Panther Lounge.
+   </h1>
+   <p>
+      The Panther Lounge is a recreational space owned by Florida Tech's
+      Student Government Association and co-run by the Florida Institute
+      of Technology Science Fiction and Fantasy Club (FITSSFF) and Anime Club.
+      With some exeptions, all Florida Tech students are free to use the lounge
+      every day from noon to ten pm.
+   </p>
+   <a href="catalog.html">
+      Browse the Libraries
+   </a>
+
+   <form method="post" action="clubChoice.php">
+      <select name="club" id="chooseClub">
+         Checkout an item from
+         <option type="submit" value="anime">
+            Anime Club
+         </option>
+         <option type="submit" value="fitssff">
+            FITSSFF
+         </option>
+      </select>
+   </form>
+   </a>
+</body>
+
+</html>

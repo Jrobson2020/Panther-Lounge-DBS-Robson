@@ -1,5 +1,7 @@
 a {
+   color: darkgoldenrod;
    text-decoration: none;
+   text-shadow: 2px 2px firebrick;
 }
 
 a:visited {
@@ -7,11 +9,16 @@ a:visited {
 }
 
 body {
-   background-color: DimGray;
+   background-color: gainsboro;
+   background-image: url(backgrounds/bg1.jpg),
+      url(backgrounds/bg2.jpg),
+      url(backgrounds/bg3.jpg),
+      url(backgrounds/bg4.jpg),
+      url(backgrounds/bg5.jpg), ;
    color: whitesmoke;
-   display: block;
+   display: inline-block;
    font-family: Arial;
-   padding-top: 100px;
+   padding-top: 150px;
 }
 
 button {
@@ -34,14 +41,15 @@ canvas {
 }
 
 h1 {
-   text-shadow: 2px 2px FireBrick;
+   text-shadow: 2px 2px darkgoldenrod;
 }
 
 header {
    background-color: darkred;
-   display: block;
+   display: inline-block;
    left: 0;
    margin: auto;
+   padding-bottom: 25px;
    position: fixed;
    right: 0;
    text-align: center;
@@ -61,8 +69,11 @@ iframe {
 }
 
 p {
-   background-color: darkred;
-   border-radius: 25px;
+   border-radius: 5px;
+   color: darkred;
+   font-family: Verdana;
+   font-size: medium;
+   padding: 5px;
 }
 
 th {
@@ -74,14 +85,14 @@ th {
    text-align: left;
 }
 
-.drpdnCntnt {
+.hidden {
    display: none;
    overflow: auto;
    position: absolute;
    z-index: 1;
 }
 
-.drpdnCntnt a {
+.hidden a {
    display: block;
 }
 
