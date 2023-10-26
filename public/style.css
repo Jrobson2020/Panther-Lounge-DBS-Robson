@@ -27,7 +27,7 @@ button {
    border-bottom-style: 2px dotted;
    border-right-style: 2px dotted;
    cursor: pointer;
-   display: inline-block;
+   display: inline-flex;
    text-shadow: 1px 1px darkred;
 }
 
@@ -46,7 +46,7 @@ h1 {
 
 header {
    background-color: darkred;
-   display: inline-block;
+   display: inline-flex;
    left: 0;
    margin: auto;
    padding-bottom: 25px;

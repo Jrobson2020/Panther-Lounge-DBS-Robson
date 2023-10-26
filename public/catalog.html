@@ -18,16 +18,39 @@
       </a>
    </h1>
 </header>
+
 <body>
-<form method="post" action="externalSearch.php">
-   <!-- send submission to search bar in the catalog section -->
-   <input id="searchQ" name="searchBar" type="text"
+   <input onkeyup="liveSearch()" id="searchBar" name="searchBar" type="text"
       placeholder="Search for manga, novels, TTRPG manuals, board games, trading cards...">
-   <a href="catalog.html">
-      <button type="submit">
-         ⌕
-      </button>
-   </a>
-</form>
+   the table below is a sample
+   <table id="catalog">
+      <tr class="header">
+         <th>
+            Name
+         </th>
+         <th>
+            Club
+         </th>
+         <th>
+            Item Type
+         </th>
+         <th>
+            ID
+         </th>
+      </tr>
+      <tr>
+         Sample Item
+      </tr>
+      <th>
+         FITSSFF
+      </th>
+      <th>
+         Trading Card
+      </th>
+      <th>
+         69696969
+      </th>
+   </table>
 </body>
+
 </html>
