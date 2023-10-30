@@ -20,12 +20,6 @@
 </header>
 
 <th>
-   Name
-</th>
-<th>
-   Type
-</th>
-<th>
    Series
 </th>
 <th>
@@ -57,24 +51,26 @@
 <body>
    <!-- consider autofill -->
    <form>
-      Name
+      Your ID
+   </form>
+   <form>
+      Item ID
       <input type="text">
    </form>
+   <!-- date should be autofill -->
    <form>
-      Type
-      <!-- dropdown select -->
+      Checkout Date
+      <input type="date">
    </form>
    <form>
-      Club
-      <select name="club" id="chooseClub">
-         <option type="submit" value="anime">
-            Anime Club
-         </option>
-         <option value="fitssff">
-            FITSSFF
-         </option>
-      </select>
+      Return Date
+      <input type="date">
    </form>
+   <button>
+      By submitting this form, I, [Name] agree to checkout
+      [This Item] that is currently in [Condition]
+      and return it by [Due Date].
+   </button>
 </body>
 
 </html>

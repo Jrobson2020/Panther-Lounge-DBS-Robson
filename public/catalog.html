@@ -11,7 +11,6 @@
 </head>
 
 <header>
-
    <h1>
       <a href="index.html">
          Catalog
@@ -24,6 +23,54 @@
       placeholder="Search for manga, novels, TTRPG manuals, board games, trading cards...">
    the table below is a sample
    <!-- add filter -->
+   <form>
+      Show (check) / hide (uncheck) any of the following information
+      <input onclick="clickToHide('itemName')" id="itemName" type="checkbox">
+      <label for="itemName">
+         Name
+      </label>
+      <input onclick="clickToHide('itemType')" id="itemType" type="checkbox">
+      <label for="itemType">
+         Type
+      </label>
+      <input onclick="clickToHide('itemSeries')" id="itemSeries" type="checkbox">
+      <label for="itemSeries">
+         Series
+      </label>
+      <input onclick="clickToHide('itemShelf')" id="itemShelf" type="checkbox">
+      <label for="itemShelf">
+         Shelf
+      </label>
+      <input onclick="clickToHide('itemSection')" id="itemSection" type="checkbox">
+      <label for="itemSection">
+         Section
+      </label>
+      <input onclick="clickToHide('itemStatus')" id="itemStatus" type="checkbox">
+      <label for="itemStatus">
+         Status
+      </label>
+      <input onclick="clickToHide('itemRating')" id="itemRating" type="checkbox">
+      <label for="itemRating">
+         Rating
+      </label>
+      <input onclick="clickToHide('itemClub')" id="itemClub" type="checkbox">
+      <label for="itemClub">
+         Club
+      </label>
+      <input onclick="clickToHide('itemDescription')" id="itemDescription" type="checkbox">
+      <label for="itemDescription">
+         Description
+      </label>
+      <input onclick="clickToHide('itemOther')" id="itemOther" type="checkbox">
+      <label for="itemOther">
+         Other
+      </label>
+      <input onclick="clickToHide('itemID')" id="itemID" type="checkbox">
+      <label for="itemID">
+         ID
+      </label>
+   </form>
+
    <table id="catalog">
       <tr class="header">
          <th>
@@ -62,16 +109,72 @@
       </tr>
       <tr>
          <td>
-            Sample Item
+            Name
          </td>
          <td>
-            FITSSFF
+            Type
          </td>
          <td>
-            Trading Card
+            Series
          </td>
          <td>
-            69696969
+            Shelf
+         </td>
+         <td>
+            Section
+         </td>
+         <td>
+            Status
+         </td>
+         <td>
+            Rating
+         </td>
+         <td>
+            Club
+         </td>
+         <td>
+            Description
+         </td>
+         <td>
+            Otder
+         </td>
+         <td>
+            ID
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Name
+         </td>
+         <td>
+            Type
+         </td>
+         <td>
+            Series
+         </td>
+         <td>
+            Shelf
+         </td>
+         <td>
+            Section
+         </td>
+         <td>
+            Status
+         </td>
+         <td>
+            Rating
+         </td>
+         <td>
+            Club
+         </td>
+         <td>
+            Description
+         </td>
+         <td>
+            Otder
+         </td>
+         <td>
+            ID
          </td>
       </tr>
    </table>

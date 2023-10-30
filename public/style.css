@@ -47,6 +47,10 @@ header button {
    text-align: right;
 }
 
+header p {
+   color: whitesmoke;
+}
+
 iframe {
    border: hidden;
    border-radius: 25px;
