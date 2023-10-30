@@ -19,7 +19,7 @@
    </h1>
    <!-- add links to the linktree for both clubs -->
 
-   <form method="post" action="externalSearch.php">
+   <form method="post" action="">
       <!-- send submission to search bar in the catalog section -->
       <input id="searchQ" name="searchBar" type="text"
          placeholder="Search for manga, novels, TTRPG manuals, board games, trading cards...">
@@ -29,17 +29,17 @@
          </button>
       </a>
    </form>
-      <form method="post" action="clubChoice.php">
+      <form method="post" action="">
          <select name="club" id="chooseClub">
             Checkout an item from
             <option type="submit" value="anime">
-               Anime Club
+               <input type="submit" value="Anime Club">
             </option>
-            <option type="submit" value="fitssff">
-               FITSSFF
+            <option value="fitssff">
+               <input type="submit" value="FITSSFF">
             </option>
          </select>
-         <input type="submit" value="Yes, this club">
+
       </form>
 </header>
 
@@ -58,7 +58,7 @@
       Browse the Libraries
    </a>
 
-   <form method="post" action="clubChoice.php">
+   <form method="post" action="">
       <select name="club" id="chooseClub">
          Checkout an item from
          <option type="submit" value="anime">
