@@ -21,24 +21,26 @@
 
    <form method="post" action="externalSearch.php">
       <!-- send submission to search bar in the catalog section -->
-      <input id="searchQ" name="searchBar" type="text" placeholder="Search for manga, novels, TTRPG manuals, board games, trading cards...">
+      <input id="searchQ" name="searchBar" type="text"
+         placeholder="Search for manga, novels, TTRPG manuals, board games, trading cards...">
       <a href="catalog.html">
          <button type="submit">
             ⌕
          </button>
       </a>
    </form>
-   <form method="post" action="clubChoice.php">
-      <select name="club" id="chooseClub">
-         Checkout an item from
-         <option type="submit" value="anime">
-            Anime Club
-         </option>
-         <option type="submit" value="fitssff">
-            FITSSFF
-         </option>
-      </select>
-   </form>
+      <form method="post" action="clubChoice.php">
+         <select name="club" id="chooseClub">
+            Checkout an item from
+            <option type="submit" value="anime">
+               Anime Club
+            </option>
+            <option type="submit" value="fitssff">
+               FITSSFF
+            </option>
+         </select>
+         <input type="submit" value="Yes, this club">
+      </form>
 </header>
 
 <body>
@@ -66,8 +68,8 @@
             FITSSFF
          </option>
       </select>
+      <input type="submit" value="Yes, this club">
    </form>
-   </a>
 </body>
 
 </html>
