@@ -20,6 +20,7 @@ button {
    border: whitesmoke;
    border-bottom-style: 2px dotted;
    border-right-style: 2px dotted;
+   color:firebrick;
    cursor: pointer;
    display: inline-flex;
 }
