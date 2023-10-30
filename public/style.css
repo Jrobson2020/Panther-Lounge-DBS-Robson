@@ -1,11 +1,6 @@
 a {
    color: darkgoldenrod;
    text-decoration: none;
-   text-shadow: 2px 2px firebrick;
-}
-
-a:visited {
-   color: firebrick;
 }
 
 body {
@@ -27,7 +22,6 @@ button {
    border-right-style: 2px dotted;
    cursor: pointer;
    display: inline-flex;
-   text-shadow: 1px 1px darkred;
 }
 
 h1 {
@@ -45,10 +39,6 @@ header {
 
 header button {
    text-align: right;
-}
-
-header a {
-   color: whitesmoke;
 }
 
 header p {
@@ -79,18 +69,13 @@ th {
    text-align: left;
 }
 
-.hidden {
+.hide {
    display: none;
    overflow: auto;
    position: absolute;
    z-index: 1;
 }
 
-.hidden a {
-   display: block;
-}
-
 .show {
-   display: block;
-   text-align: center;
+   display: inline-flex;
 }
