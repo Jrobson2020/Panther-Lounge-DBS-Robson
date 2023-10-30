@@ -5,7 +5,7 @@ a {
 }
 
 a:visited {
-   color: whitesmoke;
+   color: red;
 }
 
 body {
@@ -17,7 +17,7 @@ body {
       url(backgrounds/bg5.jpg), ;
    color: brown;
    display: inline-block;
-   font-family: Arial;
+   font-family: 'Courier New', Courier, monospace;
 }
 
 button {
@@ -37,12 +37,9 @@ h1 {
 header {
    background-color: darkred;
    display: inline-flex;
-   left: 0;
-   margin-bottom: 25px;
+   margin-bottom: 10px;
    padding: 25px;
    position: relative;
-   right: 0;
-   top: 0;
    width: 100%;
 }
 
@@ -70,7 +67,6 @@ th {
    border-bottom-style: 10px dotted;
    border-color: whitesmoke;
    border-right-style: 10px dotted;
-   color: whitesmoke;
    padding: 10px;
    text-align: left;
 }
