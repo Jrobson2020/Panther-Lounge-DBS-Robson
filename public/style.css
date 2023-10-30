@@ -15,7 +15,7 @@ body {
       url(backgrounds/bg3.jpg),
       url(backgrounds/bg4.jpg),
       url(backgrounds/bg5.jpg), ;
-   color: whitesmoke;
+   color: brown;
    display: inline-block;
    font-family: Arial;
 }
@@ -38,11 +38,12 @@ header {
    background-color: darkred;
    display: inline-flex;
    left: 0;
-   margin: 25px;
-   padding-bottom: 25px;
+   margin-bottom: 25px;
+   padding: 25px;
    position: relative;
    right: 0;
    top: 0;
+   width: 100%;
 }
 
 header button {
