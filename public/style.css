@@ -24,10 +24,6 @@ button {
    display: inline-flex;
 }
 
-h1 {
-   text-shadow: 2px 2px darkgoldenrod;
-}
-
 header {
    background-color: darkred;
    display: inline-flex;
