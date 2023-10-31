@@ -23,7 +23,7 @@
    <!-- consider autofill -->
    <form>
       Your ID
-      <input type="text">
+      <input autocomplete="on" type="text">
    </form>
    <form>
       Item ID
@@ -32,11 +32,11 @@
    <!-- date should be autofill -->
    <form>
       Checkout Date
-      <input type="date">
+      <input oninput="twoWeeks('coDate', 'ciDate')" id="coDate" type="date">
    </form>
    <form>
       Return Date
-      <input type="date">
+      <input readonly autocomplete="" id="ciDate" type="date">
    </form>
    <button>
       By submitting this form, I, [Name] agree to checkout

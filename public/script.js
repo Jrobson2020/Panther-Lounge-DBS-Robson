@@ -1,3 +1,5 @@
+// catalog
+
 function liveSearch() {
    var input = document.getElementById("searchBar");
    var filter = input.ariaValueMax.toUpperCase();
@@ -92,4 +94,11 @@ function clickToHide(hideThis) {
             break;
       }
    }
+}
+
+// woahhh what's this? automatic date machine? so cool
+function twoWeeks(coDate, ciDate) {
+   plusTwoWeeks = addDays(document.getElementById(coDate), 14);
+   ciDate = plusTwoWeeks;
+   return ciDate;
 }
