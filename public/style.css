@@ -18,16 +18,18 @@ body {
 button {
    background-color: lightcoral;
    border: whitesmoke;
-   border-bottom-style: 2px dotted;
-   border-right-style: 2px dotted;
-   color:firebrick;
+   border-radius: 5px;
+   box-shadow: 5px 5px;
    cursor: pointer;
-   display: inline-flex;
+   height: 25px;
+}
+
+button a {
+   color: firebrick;
 }
 
 header {
-   background-color: darkred;
-   display: inline-flex;
+   background-color: lightgoldenrodyellow;
    margin-bottom: 10px;
    padding: 25px;
    position: relative;
@@ -42,12 +44,9 @@ header p {
    color: whitesmoke;
 }
 
-iframe {
-   border: hidden;
-   border-radius: 25px;
-   display: block;
-   width: 75%;
-   height: 75%;
+input {
+   border: none;
+   border-radius: 5px;
 }
 
 p {
@@ -66,6 +65,11 @@ th {
    text-align: left;
 }
 
+select {
+   border: none;
+   border-radius: 5px;
+}
+
 .hide {
    display: none;
    overflow: auto;
@@ -75,4 +79,9 @@ th {
 
 .show {
    display: inline-flex;
+}
+
+#searchQ {
+   box-shadow: 5px 5px;
+   width: 75%;
 }
