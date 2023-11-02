@@ -1,5 +1,3 @@
-// catalog
-
 // live search in searchbar
 function liveSearch() {
    var input = document.getElementById("searchBar");
@@ -20,7 +18,7 @@ function liveSearch() {
    }
 }
 
-// checkboxes will show/hide columns
+// show/hide content
 function clickToHide(targetColumn) {
    if (document.getElementById(targetColumn).style.visibility === "visible") {
       document.getElementById(targetColumn).style.visibility = "hidden"
@@ -37,4 +35,9 @@ function twoWeeks(coDate, ciDate) {
    plusTwoWeeks = addDays(document.getElementById(coDate), 14);
    ciDate = plusTwoWeeks;
    return ciDate;
+}
+
+// copy id number
+function copyThis(number) {
+   navigator.clipboard.writeText(number);
 }
