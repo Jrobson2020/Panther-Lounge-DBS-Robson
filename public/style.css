@@ -85,7 +85,7 @@ select {
 }
 
 #boxes {
-   display: none;
+   visibility: hidden;
 }
 
 #searchBar {
