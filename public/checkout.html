@@ -7,23 +7,26 @@
    <script src="script.js">
    </script>
    <link rel="stylesheet" href="style.css">
-   <link rel="favicon" href="lounge_logo_trans.png">
+   <link rel="favicon" href="../assets/lounge_logo_trans.png">
 </head>
 
 <header>
-
-   <h1>
-      <a href="index.html">
-         Checkout
-      </a>
+   <a href="index.html">
+      <img class="logo" src="../assets/lounge_logo_trans.png">
+      <h1>
+         The Panther Lounge
+   </a>
    </h1>
+   <p>
+      Checkout
+   </p>
 </header>
 
 <body>
    <!-- consider autofill -->
    <form>
       Your ID
-      <input autocomplete="on" type="text">
+      <input readonly type="text">
    </form>
    <form>
       Item ID
@@ -36,7 +39,7 @@
    </form>
    <form>
       Return Date
-      <input readonly autocomplete="" id="ciDate" type="date">
+      <input readonly id="ciDate" type="date">
    </form>
    <button>
       By submitting this form, I, [Name] agree to checkout
