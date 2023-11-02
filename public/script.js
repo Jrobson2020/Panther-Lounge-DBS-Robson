@@ -21,14 +21,14 @@ function liveSearch() {
 }
 
 // checkboxes will show/hide columns
-function clickToShow(targetColumn) {
-   if (document.getElementById(targetColumn).style.visibility === "hidden") {
-document.getElementById(targetColumn).style.visibility = "visible"
+function clickToHide(targetColumn) {
+   if (document.getElementById(targetColumn).style.visibility === "visible") {
+      document.getElementById(targetColumn).style.visibility = "hidden"
+      document.getElementById(targetColumn).display = "none"
    }
    else {
-
-         document.getElementById(targetColumn).style.visibility = "hidden"
-      document.getElementById(targetColumn).display = "none";
+      document.getElementById(targetColumn).style.visibility = "visible";
+      document.getElementById(targetColumn).display = "block"
    }
 }
 
