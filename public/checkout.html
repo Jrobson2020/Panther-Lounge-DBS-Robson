@@ -35,28 +35,30 @@
 </header>
 
 <body>
-   <form>
-      Your ID
-      <input readonly type="text">
-   </form>
-   <form>
-      Item ID
-      <input type="text">
-   </form>
-   <!-- date should be autofill -->
-   <form>
-      Checkout Date
-      <input oninput="twoWeeks('coDate', 'ciDate')" id="coDate" type="date">
-   </form>
-   <form>
-      Return Date
-      <input readonly id="ciDate" type="date">
-   </form>
-   <button>
-      By submitting this form, I, [Name] agree to checkout
-      [This Item] that is currently in [Condition]
-      and return it by [Due Date].
-   </button>
+   <div>
+      <form>
+         Your ID
+         <input readonly type="text">
+      </form>
+      <form>
+         Item ID
+         <input type="text">
+      </form>
+      <!-- date should be autofill -->
+      <form>
+         Checkout Date
+         <input oninput="twoWeeks('coDate', 'ciDate')" id="coDate" type="date">
+      </form>
+      <form>
+         Return Date
+         <input readonly id="ciDate" type="date">
+      </form>
+      <button>
+         By submitting this form, I, [Name] agree to checkout
+         [This Item] that is currently in [Condition]
+         and return it by [Due Date].
+      </button>
+   </div>
 </body>
 
 </html>
