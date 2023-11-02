@@ -35,6 +35,11 @@ div {
    padding: 5px;
 }
 
+form {
+   margin: 10px;
+   padding: 5px;
+}
+
 header {
    background-color: lightgoldenrodyellow;
    margin-bottom: 10px;
@@ -80,8 +85,8 @@ select {
 }
 
 .logo {
-   height: 5px;
-   width: 5px;
+   height: 15px;
+   width: 15px;
 }
 
 #boxes {
