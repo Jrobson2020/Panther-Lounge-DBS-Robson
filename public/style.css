@@ -97,11 +97,11 @@ select {
 .halfRight {
    float: right;
    top: -10px;
-   width: 35%;
+   width: 45%;
 }
 
 .halfLeft {
-   width: 40%;
+   width: 45%;
 }
 
 .links {
