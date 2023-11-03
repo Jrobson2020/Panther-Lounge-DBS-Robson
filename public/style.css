@@ -1,5 +1,4 @@
 a {
-   display: block;
    font-weight: bold;
    margin: 10px;
    padding: 5px;
@@ -97,16 +96,16 @@ select {
 .halfRight {
    float: right;
    top: -10px;
-   width: 45%;
+   width: 40%;
 }
 
 .halfLeft {
-   width: 45%;
+   width: 40%;
 }
 
 .links {
    float: right;
-   top: -125px;
+   top: -200px;
    width: 25%;
 }
 
