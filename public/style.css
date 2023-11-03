@@ -96,11 +96,11 @@ select {
 .halfRight {
    float: right;
    top: -10px;
-   width: 40%;
+   width: 45%;
 }
 
 .halfLeft {
-   width: 40%;
+   width: 45%;
 }
 
 .links {
@@ -118,10 +118,6 @@ select {
    position: relative;
    top: 30px;
    width: 75px;
-}
-
-#boxes {
-   display: none;
 }
 
 #searchBar {
