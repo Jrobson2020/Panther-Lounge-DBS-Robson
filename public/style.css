@@ -1,7 +1,13 @@
 a {
-   text-decoration: none;
+   font-weight: bold;
    margin: 10px;
    padding: 5px;
+   text-decoration: none;
+   transition: .3s;
+}
+
+a:hover {
+   text-decoration: underline;
 }
 
 body {
@@ -62,6 +68,7 @@ input {
    border-radius: 5px;
    margin: 10px;
    padding: 5px;
+   transition: .3s;
 }
 
 p {
@@ -85,8 +92,8 @@ select {
 }
 
 .logo {
-   height: 25px;
-   width: 25px;
+   height: 150px;
+   width: 150px;
 }
 
 #boxes {
@@ -100,4 +107,8 @@ select {
 #searchQ {
    box-shadow: 5px 5px;
    width: 75%;
+}
+
+#searchQ:active {
+   box-shadow: none
 }
