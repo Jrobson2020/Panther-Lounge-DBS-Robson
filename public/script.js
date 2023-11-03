@@ -4,37 +4,37 @@ function liveSearch() {
    var searchUpCase = input.ariaValueMax.toUpperCase();
    var table = document.getElementById("catalog");
    var tr = table.getElementsByTagName("tr");
-   for (var length = 0; length < tr.length; length++) {
-      var td = tr[length].getElementsByTagName("td")[0];
+   for (var row = 0; row < tr.length; row++) {
+      var td = tr[row].getElementsByTagName("td")[0];
       if (td) {
          var txtValue = td.textContent || td.innerText;
          if (txtValue.toUpperCase().indexOf(searchUpCase) > -1) {
-            tr[length].style.display = "";
+            tr[row].style.display = "";
          }
          else {
-            tr[length].style.display = "none"
+            tr[row].style.display = "none"
          }
       }
    }
 }
 
-// show/hide checkboxes
-function hideBoxes() {
-   if (document.getElementById(boxes).display === "none") {
-      document.getElementById(boxes).display = "block";
+// show/hide
+function boxDispl() {
+   if (document.getElementById("boxes").style.display === "none") {
+      document.getElementById("boxes").style.display = "block";
    }
    else {
-      document.getElementById(boxes).display = "none";
+      document.getElementById("boxes").style.display = "none";
    }
 }
 
-// show/hide columns
-function clickToHide(targetColumn) {
-   if (document.getElementsByName(targetColumn).style.visibility === "visible") {
-      document.getElementsByName(targetColumn).style.visibility = "hidden";
+// show/hide column
+function columnVis(element) {
+   if (document.getElementById(element).style.visibility === "collapse") {
+      document.getElementById(element).style.visibility = "visible";
    }
    else {
-      document.getElementsByName(targetColumn).style.visibility = "visible";
+      document.getElementById(element).style.visibility = "collapse";
    }
 }
 
@@ -43,9 +43,8 @@ function copyThis(number) {
    navigator.clipboard.writeText(number);
 }
 
-// woahhh what's this? automatic date machine? so cool
-function twoWeeks(coDate, ciDate) {
-   plusTwoWeeks = addDays(document.getElementById(coDate), 14);
-   ciDate = plusTwoWeeks;
-   return ciDate;
+// determines date of expected check-in
+function twoWeeks(coDate) {
+   document.getElementById("ciDate").innerHTML = addDays(document.getElementById(coDate), 14);
+   // figure out how to read school calendar in case it hits an invalid date
 }

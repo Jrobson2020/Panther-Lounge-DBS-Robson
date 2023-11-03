@@ -40,58 +40,59 @@
       <a href="checkout.html">
          Check out an Item
       </a>
-      </div>
+   </div>
    <p>
       Catalog
    </p>
 </header>
 
 <body>
-   <button onclick="hideBoxes()">
+   <button onclick="boxDispl()">
       Hide columns
    </button>
+
    <div id="boxes">
-      <input id="itemNameBox" onclick="clickToHide('itemName')" type="checkbox">
+      <input id="itemNameBox" onclick="columnVis('itemName')" type="checkbox">
       <label for="itemNameBox">
          Name
       </label>
-      <input id="itemTypeBox" onclick="clickToHide('itemType')" type="checkbox">
+      <input id="itemTypeBox" onclick="columnVis('itemType')" type="checkbox">
       <label for="itemTypeBox">
          Type
       </label>
-      <input id="itemSeriesBox" onclick="clickToHide('itemSeries')" type="checkbox">
+      <input id="itemSeriesBox" onclick="columnVis('itemSeries')" type="checkbox">
       <label for="itemSeriesBox">
          Series
       </label>
-      <input id="itemShelfBox" onclick="clickToHide('itemShelf')" type="checkbox">
+      <input id="itemShelfBox" onclick="columnVis('itemShelf')" type="checkbox">
       <label for="itemShelfBox">
          Shelf
       </label>
-      <input id="itemSectionBox" onclick="clickToHide('itemSection')" type="checkbox">
+      <input id="itemSectionBox" onclick="columnVis('itemSection')" type="checkbox">
       <label for="itemSectionBox">
          Section
       </label>
-      <input id="itemStatusBox" onclick="clickToHide('itemStatus')" type="checkbox">
+      <input id="itemStatusBox" onclick="columnVis('itemStatus')" type="checkbox">
       <label for="itemStatusBox">
          Status
       </label>
-      <input id="itemRatingBox" onclick="clickToHide('itemRating')" type="checkbox">
+      <input id="itemRatingBox" onclick="columnVis('itemRating')" type="checkbox">
       <label for="itemRatingBox">
          Rating
       </label>
-      <input id="itemClubBox" onclick="clickToHide('itemClub')" type="checkbox">
+      <input id="itemClubBox" onclick="columnVis('itemClub')" type="checkbox">
       <label for="itemClubBox">
          Club
       </label>
-      <input id="itemDescriptionBox" onclick="clickToHide('itemDescription')" type="checkbox">
+      <input id="itemDescriptionBox" onclick="columnVis('itemDescription')" type="checkbox">
       <label for="itemDescriptionBox">
          Description
       </label>
-      <input id="itemOtherBox" onclick="clickToHide('itemOther')" type="checkbox">
+      <input id="itemOtherBox" onclick="columnVis('itemOther')" type="checkbox">
       <label for="itemOtherBox">
          Other
       </label>
-      <input id="itemIDBox" onclick="clickToHide('itemID')" type="checkbox">
+      <input id="itemIDBox" onclick="columnVis('itemID')" type="checkbox">
       <label for="itemIDBox">
          ID
       </label>
@@ -101,75 +102,88 @@
       placeholder="Search for manga, novels, TTRPG manuals, board games, trading cards...">
 
    <table id="catalog">
-      <tr class="header">
-         <th name="itemName">
+      <colgroup>
+      <col id="itemName" span="1">
+      <col id="itemType" span="1">
+      <col id="itemSeries" span="1">
+      <col id="itemShelf" span="1">
+      <col id="itemSection" span="1">
+      <col id="itemStatus" span="1">
+      <col id="itemRating" span="1">
+      <col id="itemClub" span="1">
+      <col id="itemDescription" span="1">
+      <col id="itemOther" span="1">
+      <col id="itemID" span="1">
+      </colgroup>
+      <tr  id="header">
+         <th>
             Name
          </th>
-         <th name="itemType">
+         <th>
             Type
          </th>
-         <th name="itemSeries">
+         <th>
             Series
          </th>
-         <th name="itemShelf">
+         <th>
             Shelf
          </th>
-         <th name="itemSection">
+         <th>
             Section
          </th>
-         <th name="itemStatus">
+         <th>
             Status
          </th>
-         <th name="itemRating">
+         <th>
             Rating
          </th>
-         <th name="itemClub">
+         <th>
             Club
          </th>
-         <th name="itemDescription">
+         <th>
             Description
          </th>
          <!-- remember to add specific information for certain item types -->
-         <th name="itemOther">
+         <th>
             Other
          </th>
-         <th name="itemID">
+         <th>
             ID
          </th>
       </tr>
       <tr>
-         <td name="itemName">
+         <td >
             Lord of the Rings
          </td>
-         <td name="itemType">
+         <td >
             Book
          </td>
-         <td name="itemSeries">
+         <td>
             Series
          </td>
-         <td name="itemShelf">
+         <td>
             Shelf
          </td>
-         <td name="itemSection">
+         <td>
             Section
          </td>
-         <td name="itemStatus">
+         <td>
             Status
          </td>
-         <td name="itemRating">
+         <td>
             Rating
          </td>
-         <td name="itemClub">
+         <td>
             FITSSFF
          </td>
-         <td name="itemDescription">
+         <td>
             Description
          </td>
          <!-- remember to add specific information for certain item types -->
-         <td name="itemOther">
+         <td>
             Other
          </td>
-         <td name="itemID">
+         <td>
             <button onclick="copyThis(42069)">
                42069
             </button>
