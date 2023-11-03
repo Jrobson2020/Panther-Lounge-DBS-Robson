@@ -91,9 +91,18 @@ select {
    border-radius: 5px;
 }
 
+.halfRight {
+   width: 50%;
+}
+
+.halfLeft {
+   float: left;
+   width: 50%;
+}
+
 .logo {
-   height: 150px;
-   width: 150px;
+   height: 75px;
+   width: 75px;
 }
 
 #boxes {
