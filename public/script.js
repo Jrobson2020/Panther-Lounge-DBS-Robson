@@ -18,7 +18,7 @@ function liveSearch() {
    }
 }
 
-// show/hide
+// show/hide checkboxes
 function boxDispl() {
    if (document.getElementById("boxes").style.display === "none") {
       document.getElementById("boxes").style.display = "block";
