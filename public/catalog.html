@@ -47,57 +47,57 @@
 </header>
 
 <body>
-   <button onclick="clickToHide('boxes')">
+   <button onclick="hideBoxes()">
       Hide columns
    </button>
-   <div name="boxes">
-      <input name="itemNameBox" onclick="clickToHide('itemName')" type="checkbox">
+   <div id="boxes">
+      <input id="itemNameBox" onclick="clickToHide('itemName')" type="checkbox">
       <label for="itemNameBox">
          Name
       </label>
-      <input name="itemTypeBox" onclick="clickToHide('itemType')" type="checkbox">
+      <input id="itemTypeBox" onclick="clickToHide('itemType')" type="checkbox">
       <label for="itemTypeBox">
          Type
       </label>
-      <input name="itemSeriesBox" onclick="clickToHide('itemSeries')" type="checkbox">
+      <input id="itemSeriesBox" onclick="clickToHide('itemSeries')" type="checkbox">
       <label for="itemSeriesBox">
          Series
       </label>
-      <input name="itemShelfBox" onclick="clickToHide('itemShelf')" type="checkbox">
+      <input id="itemShelfBox" onclick="clickToHide('itemShelf')" type="checkbox">
       <label for="itemShelfBox">
          Shelf
       </label>
-      <input name="itemSectionBox" onclick="clickToHide('itemSection')" type="checkbox">
+      <input id="itemSectionBox" onclick="clickToHide('itemSection')" type="checkbox">
       <label for="itemSectionBox">
          Section
       </label>
-      <input name="itemStatusBox" onclick="clickToHide('itemStatus')" type="checkbox">
+      <input id="itemStatusBox" onclick="clickToHide('itemStatus')" type="checkbox">
       <label for="itemStatusBox">
          Status
       </label>
-      <input name="itemRatingBox" onclick="clickToHide('itemRating')" type="checkbox">
+      <input id="itemRatingBox" onclick="clickToHide('itemRating')" type="checkbox">
       <label for="itemRatingBox">
          Rating
       </label>
-      <input name="itemClubBox" onclick="clickToHide('itemClub')" type="checkbox">
+      <input id="itemClubBox" onclick="clickToHide('itemClub')" type="checkbox">
       <label for="itemClubBox">
          Club
       </label>
-      <input name="itemDescriptionBox" onclick="clickToHide('itemDescription')" type="checkbox">
+      <input id="itemDescriptionBox" onclick="clickToHide('itemDescription')" type="checkbox">
       <label for="itemDescriptionBox">
          Description
       </label>
-      <input name="itemOtherBox" onclick="clickToHide('itemOther')" type="checkbox">
+      <input id="itemOtherBox" onclick="clickToHide('itemOther')" type="checkbox">
       <label for="itemOtherBox">
          Other
       </label>
-      <input name="itemIDBox" onclick="clickToHide('itemID')" type="checkbox">
+      <input id="itemIDBox" onclick="clickToHide('itemID')" type="checkbox">
       <label for="itemIDBox">
          ID
       </label>
    </div>
 
-   <input onkeyup="liveSearch()" id="searchBar" name="searchBar" type="text"
+   <input onkeyup="liveSearch()" id="searchBar" type="text"
       placeholder="Search for manga, novels, TTRPG manuals, board games, trading cards...">
 
    <table id="catalog">

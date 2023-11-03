@@ -104,10 +104,13 @@ select {
 }
 
 .links {
-   display: block;
    float: right;
    top: -125px;
    width: 25%;
+}
+
+.links a {
+   display: block;
 }
 
 .logo {

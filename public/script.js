@@ -18,15 +18,23 @@ function liveSearch() {
    }
 }
 
-// show/hide content
+// show/hide checkboxes
+function hideBoxes() {
+   if (document.getElementById(boxes).display === "none") {
+      document.getElementById(boxes).display = "block";
+   }
+   else {
+      document.getElementById(boxes).display = "none";
+   }
+}
+
+// show/hide columns
 function clickToHide(targetColumn) {
    if (document.getElementsByName(targetColumn).style.visibility === "visible") {
-      document.getElementsByName(targetColumn).style.visibility = "hidden"
-      document.getElementsByName(targetColumn).display = "none"
+      document.getElementsByName(targetColumn).style.visibility = "hidden";
    }
    else {
       document.getElementsByName(targetColumn).style.visibility = "visible";
-      document.getElementsByName(targetColumn).display = "block"
    }
 }
 
