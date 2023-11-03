@@ -7,7 +7,7 @@ a {
 }
 
 a:hover {
-   text-decoration: underline;
+   color: black;
 }
 
 body {
@@ -24,7 +24,7 @@ button {
    box-shadow: 5px 5px;
    cursor: pointer;
    height: 25px;
-   margin: 10px;
+   margin: 5px;
    transition: .3s;
 }
 
@@ -37,8 +37,10 @@ div {
    background-color: lightcoral;
    border-radius: 5px;
    box-shadow: 5px 5px;
+   display: block;
    margin: 10px;
-   padding: 5px;
+   padding: 25px;
+   position: relative;
 }
 
 form {
@@ -48,7 +50,7 @@ form {
 
 header {
    background-color: lightgoldenrodyellow;
-   margin-bottom: 10px;
+   margin-bottom: 60px;
    padding: 25px;
    width: 100%;
 }
@@ -92,16 +94,25 @@ select {
 }
 
 .halfRight {
-   width: 50%;
+   float: right;
+   top: -10px;
+   width: 35%;
 }
 
 .halfLeft {
-   float: left;
-   width: 50%;
+   width: 40%;
+}
+
+.links {
+   float: right;
+   top: -125px;
+   width: 25%;
 }
 
 .logo {
    height: 75px;
+   position: relative;
+   top: 30px;
    width: 75px;
 }
 
@@ -110,12 +121,12 @@ select {
 }
 
 #searchBar {
-   width: 75%;
+   width: 100%;
 }
 
 #searchQ {
    box-shadow: 5px 5px;
-   width: 75%;
+   width: 50%;
 }
 
 #searchQ:active {
