@@ -104,8 +104,9 @@ select {
 }
 
 .links {
+   display: block;
    float: right;
-   top: -200px;
+   top: -125px;
    width: 25%;
 }
 
