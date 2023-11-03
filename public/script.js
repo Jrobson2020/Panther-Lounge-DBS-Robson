@@ -20,13 +20,13 @@ function liveSearch() {
 
 // show/hide content
 function clickToHide(targetColumn) {
-   if (document.getElementsById(targetColumn).style.visibility === "visible") {
-      document.getElementsById(targetColumn).style.visibility = "hidden"
-      document.getElementsById(targetColumn).display = "none"
+   if (document.getElementById(targetColumn).style.visibility === "visible") {
+      document.getElementById(targetColumn).style.visibility = "hidden"
+      document.getElementById(targetColumn).display = "none"
    }
    else {
-      document.getElementsById(targetColumn).style.visibility = "visible";
-      document.getElementsById(targetColumn).display = "block"
+      document.getElementById(targetColumn).style.visibility = "visible";
+      document.getElementById(targetColumn).display = "block"
    }
 }
 
