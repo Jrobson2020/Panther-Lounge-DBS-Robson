@@ -47,6 +47,9 @@
 </header>
 
 <body>
+   <input onkeyup="liveSearch()" id="searchBar" type="text"
+      placeholder="Search for manga, novels, TTRPG manuals, board games, trading cards...">
+
    <button onclick="boxDispl()">
       Hide columns
    </button>
@@ -98,9 +101,6 @@
       </label>
    </div>
 
-   <input onkeyup="liveSearch()" id="searchBar" type="text"
-      placeholder="Search for manga, novels, TTRPG manuals, board games, trading cards...">
-
    <table id="catalog">
       <colgroup>
          <col id="itemName" span="1">
@@ -114,6 +114,7 @@
          <col id="itemDescription" span="1">
          <col id="itemOther" span="1">
          <col id="itemID" span="1">
+         <col id="itemCheckout" span="1">
       </colgroup>
       <tr id="header">
          <th>
@@ -149,6 +150,9 @@
          </th>
          <th>
             ID
+         </th>
+         <th>
+            Checkout
          </th>
       </tr>
       <tr>
@@ -186,6 +190,11 @@
          <td>
             <button onclick="copyThis(42069)">
                42069
+            </button>
+         </td>
+         <td>
+            <button onclick="checkout(42069)">
+               Available for checkout
             </button>
          </td>
       </tr>

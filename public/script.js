@@ -1,3 +1,8 @@
+// sending query from homepage to catalog searchbar
+function fillFromIndex(userSearch) {
+   document.getElementById("searchBar").innerHTML = window
+}
+
 // live search in searchbar
 function liveSearch() {
    var input = document.getElementById("searchBar");
@@ -30,11 +35,11 @@ function boxDispl() {
 
 // show/hide column
 function columnVis(element) {
-   if (document.getElementById(element).style.visibility === "collapse") {
-      document.getElementById(element).style.visibility = "visible";
+   if (document.getElementById(element).style.visibility === "visible") {
+      document.getElementById(element).style.visibility = "collapse";
    }
    else {
-      document.getElementById(element).style.visibility = "collapse";
+      document.getElementById(element).style.visibility = "visible";
    }
 }
 
@@ -42,6 +47,10 @@ function columnVis(element) {
 function copyThis(number) {
    navigator.clipboard.writeText(number);
 }
+
+// sends user and item ID to checkout form
+
+// gets today's date
 
 // determines date of expected check-in
 function twoWeeks(coDate) {

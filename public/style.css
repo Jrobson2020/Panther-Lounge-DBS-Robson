@@ -120,6 +120,10 @@ select {
    width: 75px;
 }
 
+#catalog {
+   visibility: collapse;
+}
+
 #searchBar {
    width: 100%;
 }
