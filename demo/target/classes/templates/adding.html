@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+
+<html> 
+
+<head>
+   <title>
+      Panther Lounge Database
+   </title>
+   <script src="script.js">
+   </script>
+   <link rel="stylesheet" href="style.css">
+   <link rel="favicon" th:href="@{/images/lounge_logo_trans.png}">
+</head>
+
+<body>
+   <div>
+      <table>
+      <form method="POST" th:action="@{/admin/add}" th:object="${item}"> 
+         <tr>
+            <td>
+               <label for="item">Name:</label><br/>
+               <input type="text" th:field="*{name}"/>
+            </td>
+            <td>
+               <label for="item">Type:</label><br/> 
+               <input type="text" th:field="*{type}"/>
+            </td>
+            <td>
+               <label for="item">Club:</label><br/>
+               <input type="text" th:field="*{club}"/>
+            </td>
+            <td>
+               <label for="item">Shelf:</label><br/>
+               <input type="text" th:field="*{shelf}"/>
+            </td>
+            <td>
+               <label for="item">ID:</label><br/>
+               <input type="text" th:field="*{id}"/>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <label for="item">Series:</label><br/>
+               <input type="text" th:field="*{series}"/>
+            </td>
+            <td>
+               <label for="item">Status:</label><br/>
+               <input type="text" th:field="*{status}"/>
+            </td>
+            <td>
+               <label for="item">Rating:</label><br/>
+               <input type="text" th:field="*{rating}"/>
+            </td>
+            <td>
+               <label for="item">Description:</label><br/>
+               <input type="text" th:field="*{desc}"/>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <input type="submit" value="Register"/> 
+            </td>
+         </tr>
+      </form>
+      </table>
+   </div>
+</body>

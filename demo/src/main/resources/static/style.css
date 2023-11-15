@@ -1,0 +1,134 @@
+a {
+   font-weight: bold;
+   margin: 10px;
+   padding: 5px;
+   text-decoration: none;
+   transition: .3s;
+}
+
+a:hover {
+   color: black;
+}
+
+body {
+   background-color: gainsboro;
+   display: inline-block;
+   font-family: 'Courier New', Courier, monospace;
+   margin: 0px;
+}
+
+button {
+   background-color: lightcoral;
+   border: none;
+   border-radius: 5px;
+   box-shadow: 5px 5px;
+   cursor: pointer;
+   height: 25px;
+   margin: 5px;
+   transition: .3s;
+}
+
+button:hover {
+   background: none;
+   box-shadow: none;
+}
+
+div {
+   background-color: lightcoral;
+   border-radius: 5px;
+   box-shadow: 5px 5px;
+   display: block;
+   margin: 10px;
+   padding: 25px;
+   position: relative;
+}
+
+form {
+   margin: 10px;
+   padding: 5px;
+}
+
+header {
+   background-color: lightgoldenrodyellow;
+   margin-bottom: 75px;
+   padding: 25px;
+   width: 100%;
+}
+
+header button {
+   text-align: right;
+}
+
+h1 {
+   display: inline;
+   margin: 10px;
+   padding: 5px;
+}
+
+input {
+   border: none;
+   border-radius: 5px;
+   margin: 10px;
+   padding: 5px;
+   transition: .3s;
+}
+
+p {
+   border-radius: 5px;
+   font-family: Verdana;
+   font-size: medium;
+   margin: 10px;
+   padding: 5px;
+}
+
+th {
+   border-bottom-style: 10px dotted;
+   border-right-style: 10px dotted;
+   padding: 10px;
+   text-align: left;
+}
+
+select {
+   border: none;
+   border-radius: 5px;
+}
+
+.halfRight {
+   float: right;
+   top: -10px;
+   width: 45%;
+}
+
+.halfLeft {
+   width: 45%;
+}
+
+.links {
+   float: right;
+   top: -125px;
+   width: 25%;
+}
+
+.links a {
+   display: block;
+}
+
+.logo {
+   height: 75px;
+   position: relative;
+   top: 30px;
+   width: 75px;
+}
+
+#searchBar {
+   width: 100%;
+}
+
+#searchQ {
+   box-shadow: 5px 5px;
+   width: 50%;
+}
+
+#searchQ:active {
+   box-shadow: none
+}

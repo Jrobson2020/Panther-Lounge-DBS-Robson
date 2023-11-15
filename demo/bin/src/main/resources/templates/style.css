@@ -1,0 +1,102 @@
+a {
+   color: darkgoldenrod;
+   text-decoration: none;
+   text-shadow: 2px 2px firebrick;
+}
+
+a:visited {
+   color: whitesmoke;
+}
+
+body {
+   background-color: gainsboro;
+   background-image: url(backgrounds/bg1.jpg),
+      url(backgrounds/bg2.jpg),
+      url(backgrounds/bg3.jpg),
+      url(backgrounds/bg4.jpg),
+      url(backgrounds/bg5.jpg), ;
+   color: whitesmoke;
+   display: inline-block;
+   font-family: Arial;
+   padding-top: 150px;
+}
+
+button {
+   background-color: lightcoral;
+   border: whitesmoke;
+   border-bottom-style: 2px dotted;
+   border-right-style: 2px dotted;
+   cursor: pointer;
+   display: inline-flex;
+   text-shadow: 1px 1px darkred;
+}
+
+canvas {
+   position: fixed;
+   left: 50%;
+   top: 50%;
+   max-height: 100vh;
+   max-width: 100vw;
+   transform: translate(-50%, -50%);
+}
+
+h1 {
+   text-shadow: 2px 2px darkgoldenrod;
+}
+
+header {
+   background-color: darkred;
+   display: inline-flex;
+   left: 0;
+   margin: auto;
+   padding-bottom: 25px;
+   position: fixed;
+   right: 0;
+   text-align: center;
+   top: 0;
+}
+
+header button {
+   text-align: right;
+}
+
+iframe {
+   border: hidden;
+   border-radius: 25px;
+   display: block;
+   width: 75%;
+   height: 75%;
+}
+
+p {
+   border-radius: 5px;
+   color: darkred;
+   font-family: Verdana;
+   font-size: medium;
+   padding: 5px;
+}
+
+th {
+   border-bottom-style: 10px dotted;
+   border-color: whitesmoke;
+   border-right-style: 10px dotted;
+   color: whitesmoke;
+   padding: 10px;
+   text-align: left;
+}
+
+.hidden {
+   display: none;
+   overflow: auto;
+   position: absolute;
+   z-index: 1;
+}
+
+.hidden a {
+   display: block;
+}
+
+.show {
+   display: block;
+   text-align: center;
+}
