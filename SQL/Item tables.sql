@@ -1,7 +1,9 @@
 CREATE TABLE IF NOT EXISTS items (
-	id INT NOT NULL,
+    id INT NOT NULL,
     itemName VARCHAR(64),
     itemType VARCHAR(16),
+    shelf VARCHAR(8),
+    club VARCHAR(8),
     series VARCHAR(64),
     itemStatus INT,
     rating INT,
