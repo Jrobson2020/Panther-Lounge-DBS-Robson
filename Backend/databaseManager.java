@@ -61,6 +61,32 @@ public class databaseManager {
      }
      return true;
   }
+
+public boolean updateItem (String tableName, String[] String[][] newValues String[][] constraints) {
+     String commandFromSet = "UPDATE FROM " + tableName + " SET ";
+     for (String[] param : newValues) {
+        commandFromSet = commandFromSet + param[0] + "=?, ";
+     }
+     String commandWhere = " WHERE "
+     for (String[] param : constraints) {
+        commandWhere = commandWhere + param[0] + "=? AND ";
+     }
+     String command = commandFromSet.substring(0, (commandFromSet.length() - 3)) + commandWhere.substring(0, (commandWhere.length()-5))
+     try {
+        PreparedStatement ps = conn.prepareStatement();
+     for (int i = 1; i <= newValues.length; i++ ) {
+        ps.setString(i, newValues[i-1][1]);
+     }
+     for (int i = 1; i <= constraints.length; i++) {
+           ps.setString(i+newValues.length, constraints[i - 1][1]);
+     }
+     ps.executeUpdate();
+     } catch (SQLException e) {
+        System.out.println(e);
+     return false;
+     }
+     return true;
+  } 
   public void close() {
      try {
          if (conn != null)
