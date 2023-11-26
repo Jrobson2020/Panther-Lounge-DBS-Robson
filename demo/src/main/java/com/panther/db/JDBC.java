@@ -10,8 +10,10 @@ public class JDBC {
         String command = "INSERT INTO " + tableName +
                        " VALUES (" + (new String(new char[values.length]).replace("\0", ", ?").substring(2) + ")");
         
-        executeUpdate(command, values);
-        return true;
+        if (executeUpdate(command, values))
+           return true;
+        else
+           return false;
     }
     public boolean addItem (itemDetails item) {
        String command = "INSERT INTO items" +
@@ -57,19 +59,31 @@ public class JDBC {
         return true;
    }
     
+    public boolean editItem (String tableName, String[][] constraints, String[][] changes) {
+       String command = "UPDATE " + tableName + " SET ";
+       String[] params = new String[constraints.length + changes.length];
+       int index = 0;
+       for (String [] constraint : constraints) {
+          command = command + constraint[0] + "=?, ";
+          params[index++] = constraint[1];
+       }
+       command = command.substring(0, command.length() - 2) + " WHERE ";
+       for (String[] change : changes) {
+          command = command + change[0] + "=? AND ";
+          params[index++] = change[1];
+       }
+       
+       if (executeUpdate(command.substring(0, command.length() - 5), params))
+          return true;
+       else
+          return false;
+    }
+    
     public ResultSet search (String tableName) {
        String command = "SELECT * FROM " + tableName;
        System.out.println(command);
        
-       ResultSet rs = null;
-       try {
-          DataSource dataSource = configDataSource.source();
-          Connection conn = dataSource.getConnection();
-          PreparedStatement ps = conn.prepareStatement(command);
-          rs = ps.executeQuery();
-      } catch (SQLException e) {
-          System.out.println(e);
-      }
+       ResultSet rs = executeQuery(command, new String[0]);
        return rs;
     }
     
@@ -111,5 +125,20 @@ public class JDBC {
       return true;
     }
     
+    public ResultSet executeQuery (String command, String[] wildcards) {
+       ResultSet rs = null;
+       try {
+          DataSource dataSource = configDataSource.source();
+          Connection conn = dataSource.getConnection();
+          PreparedStatement ps = conn.prepareStatement(command);
+          for (int i = 1; i <= wildcards.length; i++) {
+              ps.setString(i, wildcards[i - 1]);
+          }
+          rs = ps.executeQuery();
+      } catch (SQLException e) {
+          System.out.println(e);
+      }
+      return rs;
+    }
 
 }
