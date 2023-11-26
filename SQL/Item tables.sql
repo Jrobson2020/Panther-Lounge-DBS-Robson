@@ -1,5 +1,5 @@
 CREATE TABLE IF NOT EXISTS items (
-    id INT NOT NULL,
+	id INT NOT NULL,
     itemName VARCHAR(64),
     itemType VARCHAR(16),
     shelf VARCHAR(8),
@@ -43,3 +43,40 @@ CREATE TABLE IF NOT EXISTS hardware (
         ON DELETE CASCADE
 );
     
+CREATE TABLE IF NOT EXISTS member (
+	id INT NOT NULL,
+    memberName VARCHAR(64),
+    email VARCHAR(32),
+    discord VARCHAR(32),
+    phone VARCHAR(10),
+    club VARCHAR(8),
+    joined DATE,
+    memberUntil DATE,
+    flagged BOOL,
+    pass VARCHAR(64),
+    CONSTRAINT PRIMARY KEY (id)
+);
+
+CREATE TABLE IF NOT EXISTS `admin` (
+	id INT NOT NULL,
+    pos VARCHAR(16),
+    CONSTRAINT PRIMARY KEY (id),
+    CONSTRAINT FOREIGN KEY (id) REFERENCES member(id)
+		ON UPDATE CASCADE
+        ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS checkOut (
+	memberId INT NOT NULL,
+    itemId INT NOT NULL,
+    coDate DATE,
+    returned BOOL,
+    returnDate DATE,
+    CONSTRAINT PRIMARY KEY (memberId, itemId),
+    CONSTRAINT FOREIGN KEY (memberId) REFERENCES member(id)
+		ON UPDATE CASCADE
+        ON DELETE CASCADE,
+    CONSTRAINT FOREIGN KEY (itemId) REFERENCES items(id)
+		ON UPDATE CASCADE
+        ON DELETE CASCADE
+);
