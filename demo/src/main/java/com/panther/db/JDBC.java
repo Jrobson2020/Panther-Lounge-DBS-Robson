@@ -60,17 +60,17 @@ public class JDBC {
    }
     
     public boolean editItem (String tableName, String[][] constraints, String[][] changes) {
-       String command = "UPDATE " + tableName + " SET ";
+      String command = "UPDATE " + tableName + " SET ";
        String[] params = new String[constraints.length + changes.length];
        int index = 0;
-       for (String [] constraint : constraints) {
-          command = command + constraint[0] + "=?, ";
-          params[index++] = constraint[1];
+       for (String [] change : changes) {
+          command = command + change[0] + "=?, ";
+          params[index++] = change[1];
        }
        command = command.substring(0, command.length() - 2) + " WHERE ";
-       for (String[] change : changes) {
-          command = command + change[0] + "=? AND ";
-          params[index++] = change[1];
+       for (String[] constraint : constraints) {
+          command = command + constraint[0] + "=? AND ";
+          params[index++] = constraint[1];
        }
        
        if (executeUpdate(command.substring(0, command.length() - 5), params))
